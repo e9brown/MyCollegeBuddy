@@ -16,8 +16,8 @@
 
 .jumbotron:after {
      content:"";
-     background: url("../images/city.jpg");
-     opacity: 0.8;
+     background: url("../images/city-1.jpg");
+     opacity: 0.2;
      top: 0;
      left: 0;
      bottom: 0;
