@@ -16,8 +16,8 @@
 
 .jumbotron:after {
      content:"";
-     background: none;
-     opacity: 0.2;
+     background: url("../images/city.jpex");
+     opacity: 0.8;
      top: 0;
      left: 0;
      bottom: 0;
@@ -26,10 +26,11 @@
      z-index: -1;	
 }
 
+
 .jumbotron p {
      color: #3034E8;
 }
 
 .project a {
-     text-align: left;
+     text-align: center;
 }
