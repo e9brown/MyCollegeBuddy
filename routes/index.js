@@ -7,11 +7,11 @@ exports.view = function(req, res){
     'projects': [
       { 'name': 'Add Experience',
         //'image': 'lorempixel.people.1.jpeg',
-        'id': 'project1'
+        'id': 'option1'
       },
-      { 'name': 'Lookup or Edit Experience',
+      { 'name': 'Experience History',
         //'image': 'lorempixel.city.1.jpeg',
-        'id': 'project2'
+        'id': 'option2'
       },
     ]  
   });
