@@ -19,6 +19,16 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=759982734106669";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 	<div class="container">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
@@ -26,14 +36,10 @@
 			<h1>My College City (LOGIN)</h1>
 			<p>Build Your City with Experience</p>
 		</div>
-
 		
-		<div>
-		{{#each buttons}}
-		<div class="buttons" id="{{id}}">
-      		<a href="add" class="thumbnail"><p>{{name}}</p></a>
-    	</div>
-		{{/each}}
+<center>
+<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+</center>
 
 		<style type ="text/css" >
    			.footer{ 
