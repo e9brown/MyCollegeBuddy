@@ -1,3 +1,3 @@
-exports.viewProject = function(req, res) {
-   res.render('project'); 
+exports.viewAdd = function(req, res) {
+   res.render("add"); 
 };
