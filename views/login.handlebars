@@ -35,14 +35,6 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=759982734106669";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-	if (response === 'connected') {
-		console.log(response.user_id);
-	}
-  });
-}
-
 </script>
 
 
@@ -55,11 +47,8 @@ function checkLoginState() {
 		</div>
 		
 <center>
-<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
+<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" onlogin="window.location.replace("http://stackoverflow.com")"></div>
 </center>
-<script>
-checkLoginState();
-</script>
 		<style type ="text/css" >
    			.footer{ 
        		position: fixed;     
