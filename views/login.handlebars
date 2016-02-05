@@ -26,7 +26,14 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=759982734106669";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    window.location.replace("http://stackoverflow.com");
+  });
+}
+
+</script>
 
 
 	<div class="container">
@@ -38,7 +45,7 @@
 		</div>
 		
 <center>
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="false" data-auto-logout-link="false"></div>
+<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
 </center>
 
 		<style type ="text/css" >
