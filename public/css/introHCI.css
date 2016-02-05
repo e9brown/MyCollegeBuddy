@@ -45,9 +45,8 @@
 
 .rightfoot{
 	position: fixed;     
-       	text-align: right;    
-       	bottom: 0px;
-	right: 20px;
+       	text-align: left;    
+       	bottom: 20px;
        	width: 100%;
 }
 
