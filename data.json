@@ -1,0 +1,29 @@
+{
+	//Data file
+	//We need custom data for each login
+	//
+	"entry" : [
+		"title" : "Sample entry",
+		"date created" : "today ",
+		"last edit" : "today ",
+		"category" : "Sample "
+	]
+	"uniquelogin": [{
+			
+			"fblogin" : "erik.m.brown",
+			"mydata" : {
+				"entries" : {
+					"sample" : {{entry}};
+					
+				}
+				"compachievements" : {
+				}
+				"currsuggestions" : {
+				}
+
+			}
+
+			
+
+		}]
+}
