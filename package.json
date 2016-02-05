@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "cs147-lab-1",
   "description": "Serving static content via html files",
   "version": "0.0.1",
@@ -17,4 +18,29 @@
   "engines": {
   	"node": "0.10.x"
   }
+=======
+  "name": "IntroHCI",
+  "version": "0.0.1",
+  "author": "Intro HCI Staff",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IntroHCI/lab4"
+  },
+  "license": "MIT",
+
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "express3-handlebars": "*",
+    "mongodb": "*",
+    "mongoose": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }  
+>>>>>>> 12dae47daedbeab626537a8a2be15c2aedcb0d9e
 }

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add</title>
+
+  <!-- Non functional code for fancy date drop down-->
+  <!--<meta charset="utf-8">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+  <script src="jQuery.ui.datepicker.js"></script>
+  <script src="jquery.ui.datepicker.mobile.js"></script>
+
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  
+  <script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  </script>-->
+
+  </head>
+
+  <body>
+    <div class="jumbotron">
+      <h1>ADD</h1>
+    </div>
+
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+     {{#each buttons}}
+	<a href="{{link}}" ><p>{{name}}</p></a>
+     {{/each}}
+  </div>
+</div>		
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+	 console.log("myfunction running");
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	
+    <!--Code for drop down that doesn't channge on select, maybe use
+        full elsewhere-->
+    <!--<div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Category
+        <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Volunteering</a></li>
+        <li><a href="#">Grades</a></li>
+      </ul>
+    </div>-->
+
+    <div class="add-page-item">
+      <select name="category">
+        <option value="sports">Sports</option>
+        <option value="community-service">Community Service</option>
+        <option value="grades">Grades</option>
+        <option value="leadership">Leadership</option>
+      </select>
+    </div>
+    <!-- Non functional code for fancy date drop down-->
+    <!--<p>Date: <input type="text" id="datepicker"></p>-->
+
+    <div class="add-page-item">
+      <textarea name="message" rows="1" cols="30">Enter Activity Title</textarea>
+    </div>
+
+    <div class="add-page-item">
+      <textarea name="message" rows="1" cols="30">Enter Date</textarea>
+    </div>
+
+    <div class="add-page-item">
+      <textarea name="message" rows="10" cols="30">Add description of activity.</textarea>
+    </div>
+
+    <div class="add-page-item">
+      <!--Maybe link to lookup page as confirmation?  Or have pop-up,
+          needs confirmation.  And also functionality, just links back
+          to home page.-->
+      <p><a href="/">Submit</a></p>
+    </div>
+
+  <!--Ugly link back to home page-->
+  <p><a href="/">Back &raquo;</a></p>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="/css/introHCI.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
