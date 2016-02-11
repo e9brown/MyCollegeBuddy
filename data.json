@@ -1,29 +1,25 @@
 {
-	//Data file
-	//We need custom data for each login
-	//
-	"entry" : [
-		"title" : "Sample entry",
-		"date created" : "today ",
-		"last edit" : "today ",
-		"category" : "Sample "
+	"entries": [
+		{
+			"title": "Sample entry",
+			"date": "today ",
+			"edit": "today ",
+			"category": "Sample "
+		},
+		{
+			"title": "Sample entry2",
+			"date": "tomorrow ",
+			"edit": "tomorrow ",
+			"category": "Sample 2"
+		}
+	],
+
+	"user": [
+		{
+			"facebook_id" : "erik_m_brown"
+		}
 	]
-	"uniquelogin": [{
-			
-			"fblogin" : "erik.m.brown",
-			"mydata" : {
-				"entries" : {
-					"sample" : {{entry}};
-					
-				}
-				"compachievements" : {
-				}
-				"currsuggestions" : {
-				}
 
-			}
+	
 
-			
-
-		}]
 }

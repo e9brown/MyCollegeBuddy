@@ -19,6 +19,24 @@
   </div>
 </div>		
 
+<div class="entries">
+    {{#each data.entries}}
+      <div class="entry" id="{{id}}">
+          <h4>{{title}}</h4>
+	  <h5>Entry was created on: {{date}}</h5>
+	  <h5>Most recent edit was on {{edit}}</h5>
+	  <h5>{{category}}</h5>
+      </div>
+    {{/each}}	
+</div>
+
+    
+
+
+
+
+
+
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
