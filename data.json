@@ -73,6 +73,10 @@
         "id": "option2",
 	"link":"/suggestions"
       },
+	  { "name": "Help",
+	    "id": "option2",
+	"link": "/help"
+	  },
       { "name": "Login/Logout",
         "id": "option2",
 	"link": "/login"
