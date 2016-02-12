@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var add = require('./routes/add');
+var help = require('./routes/help');
 var login = require('./routes/login');
 var history = require('./routes/history');
 var suggestions = require('./routes/suggestions');
@@ -44,6 +45,7 @@ app.get('/add', add.viewAdd);
 app.get('/login', login.viewLogin);
 app.get('/history', history.viewHistory)
 app.get('/suggestions', suggestions.viewSuggestions)
+app.get('/help', help.viewHelp);
 // Example route
 // app.get('/users', user.list);
 
