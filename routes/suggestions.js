@@ -20,7 +20,7 @@ exports.viewSuggestions = function(req, res){
       { 'name': 'Login/Logout',
         'id': 'option2',
 	'link': '/login'
-      },
+      }, data
     ]  
   });
 };

@@ -5,7 +5,6 @@ var data = require("../data.json");
 exports.viewHistory = function(req, res){
    console.log(data.entries);	
    res.render('history',{
-	   data,
     'buttons': [
       { 'name': 'Add Entry',
         'id': 'option1',
@@ -22,7 +21,7 @@ exports.viewHistory = function(req, res){
       { 'name': 'Login/Logout',
         'id': 'option2',
 	'link': '/login'
-      },
+      }, data
     ]  
   });
   

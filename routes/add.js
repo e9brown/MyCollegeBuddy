@@ -8,7 +8,6 @@ exports.viewAdd = function(req, res) {
 	   	'category' :req.query.category,
 	   }	
    res.render("add", {
-    	   data,
     'buttons': [
       { 'name': 'Add Entry',
         'id': 'option1',
@@ -25,7 +24,8 @@ exports.viewAdd = function(req, res) {
       { 'name': 'Login/Logout',
         'id': 'option2',
 	'link': '/login'
-      },
+      }, 
+    data
     ]  
   });
 };
