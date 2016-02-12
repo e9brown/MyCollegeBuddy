@@ -2,7 +2,24 @@
 <html lang="en">
   <head>
     <title>Previous Entries</title>
-
+<!-- HELP BUTTON HEADER CODE BLOCK -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+      //$(function() {
+	    //$( "#dialog" ).dialog();
+      //});
+	  
+	  $(document).ready(function () {
+        //$('#dialog').dialog(); 
+        $('#dialog_link').click(function () {
+          $('#dialog').dialog();
+          return false;
+        });
+      });
+    </script>
+	<!-- END HELP BUTTON HEADER CODE BLOCK -->
   </head>
 
   <body>
@@ -10,14 +27,28 @@
       <h1>PREVIOUS ENTRIES</h1>
     </div>
 
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">Menu</button>
-  <div id="myDropdown" class="dropdown-content">
-     {{#each data.buttons}}
-	<a href="{{link}}" ><p>{{name}}</p></a>
-     {{/each}}
-  </div>
-</div>		
+	<!-- Help button & menu stuff -->
+    <div style="position: relative;">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Menu</button>
+        <div id="myDropdown" class="dropdown-content">
+          {{#each data.buttons}}
+            <a href="{{link}}" ><p>{{name}}</p></a>
+          {{/each}}
+        </div>
+      </div>
+    
+      <div style="text-align:right; position: absolute; right:20px; top:0px;">
+        <div id="dialog" title="Previous Entries Help" style="display:none">
+          <p>You are viewing the entries you previously added.</p>
+        </div>
+        <style> .button2 {background-color: #4CAF50; border: none; color: white; padding: 15px 15px; text-align: center; text-decoration: none; display: inline-block;
+          font-size: 16px; margin: 4px 2px; cursor: pointer;}
+        </style>
+        <button class="button2" id="dialog_link">Help</button>
+      </div>
+	</div>
+	<!-- End help button & menu stuff -->	
 
 <div class="entries">
     {{#each data.entries}}
@@ -73,7 +104,7 @@ window.onclick = function(event) {
     <link href="/css/introHCI.css" rel="stylesheet">
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <!--<script src="https://code.jquery.com/jquery.js"></script> REPLACED WITH OTHER VERSION IN HEADER-->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
   </body>
