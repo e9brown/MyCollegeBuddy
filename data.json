@@ -1,16 +1,22 @@
 {
 	"entries": [
 		{
-			"title": "Sample entry",
+			"title": "Fall 2011 report card",
 			"date": "today ",
 			"edit": "today ",
-			"category": "leadership"
+			"category": "grades"
 		},
 		{
-			"title": "Sample entry2",
+			"title": "Fed homeless at soup kitchen with Bernie",
 			"date": "tomorrow ",
 			"edit": "tomorrow ",
-			"category": "sports"
+			"category": "community-service"
+		},
+		{
+			"title": "Led a rally for Bernie",
+			"date": "tomorrow ",
+			"edit": "tomorrow ",
+			"category": "leadership"
 		}
 	],
 
@@ -20,6 +26,25 @@
 		{"category": "grades"},
 		{"category": "leadership"}
 	],	
+
+	"suggestions": [
+		{ "tag": "sport-try",
+		 "weakness": "sports",
+		 "idea": "try out some sports!"},
+
+	        { "tag": "sport-tryharder",
+		 "weakness": "sports",
+		 "idea": "try out MORE sports!"},
+
+		{"weakness": "community-service",
+		 "idea": "colleges love community service!"},
+
+		{"weakness": "grades",
+		 "idea": "mycollegebuddy is a great way to store transcripts"},
+
+		{"weakness": "leadership",
+		 "idea": "leadership roles dramatically increase university interest"}
+	],
 
 	"user": [
 		{

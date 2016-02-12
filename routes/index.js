@@ -21,6 +21,6 @@ exports.view = function(req, res){
         'id': 'option2',
 	'link': '/login'
       }
-    ]  , data
-  });
+    ], data  
+  })
 };
