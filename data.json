@@ -4,15 +4,22 @@
 			"title": "Sample entry",
 			"date": "today ",
 			"edit": "today ",
-			"category": "Sample "
+			"category": "leadership"
 		},
 		{
 			"title": "Sample entry2",
 			"date": "tomorrow ",
 			"edit": "tomorrow ",
-			"category": "Sample 2"
+			"category": "sports"
 		}
 	],
+
+	"categories": [
+		{"category": "sports"},
+		{"category": "community-service"},
+		{"category": "grades"},
+		{"category": "leadership"}
+	],	
 
 	"user": [
 		{

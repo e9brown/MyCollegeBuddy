@@ -77,10 +77,9 @@ window.onclick = function(event) {
 
     <div class="add-page-item">
       <select name="category">
-        <option value="sports">Sports</option>
-        <option value="community-service">Community Service</option>
-        <option value="grades">Grades</option>
-        <option value="leadership">Leadership</option>
+	  {{#each data.categories}}
+          <option>{{category}}</option>
+	   {{/each}}     
       </select>
     </div>
     <!-- Non functional code for fancy date drop down-->

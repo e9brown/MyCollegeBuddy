@@ -25,7 +25,7 @@ exports.viewAdd = function(req, res) {
         'id': 'option2',
 	'link': '/login'
       }, 
-    data
-    ]  
+    
+    ] , data 
   });
 };

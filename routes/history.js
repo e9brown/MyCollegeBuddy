@@ -21,8 +21,8 @@ exports.viewHistory = function(req, res){
       { 'name': 'Login/Logout',
         'id': 'option2',
 	'link': '/login'
-      }, data
-    ]  
+      }, 
+    ]  , data
   });
   
 };
