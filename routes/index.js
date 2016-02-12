@@ -4,6 +4,7 @@ var data = require('../data.json');
  */
 exports.view = function(req, res){
    res.render('index', {
+     data,
     'buttons': [
       { 'name': 'Add Entry',
         'id': 'option1',
@@ -21,6 +22,7 @@ exports.view = function(req, res){
         'id': 'option2',
 	'link': '/login'
       }
-    ], data  
-  })
+    ]
+  });
 };
+
