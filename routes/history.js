@@ -4,6 +4,6 @@ var data = require("../data.json");
  */
 exports.viewHistory = function(req, res){
    console.log(data.entries);	
-   res.render('history',{data  });
+   res.render('history',{'data':data});
   
 };

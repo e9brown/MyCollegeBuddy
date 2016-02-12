@@ -7,5 +7,5 @@ exports.viewAdd = function(req, res) {
 	   	'edit' :req.query.date,
 	   	'category' :req.query.category,
 	   }	
-   res.render("add", {data });
+   res.render("add", {'data':data});
 };
