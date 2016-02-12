@@ -18,9 +18,33 @@
 	<a href="{{link}}" ><p>{{name}}</p></a>
      {{/each}}
   </div>
-</div>		
+</div>	
+
+<button onclick="identifyWeakness()" class="btn">Score</button>
+
+    {{#each data.categories}}
+    	<p>{{category}} has a score of {{score}}</p>
+    {{/each}}
 
 <script>
+function identifyWeakness() {
+	var data = $(this).data;
+	var headers = Object.keys(data);
+	console.log(data);
+}	
+</script>
+
+<h1> Suggestions: </h1> 
+{{#each data.suggestions}}
+<h4>{{idea}}</h4>
+{{/each}}
+<p>{{data.suggestions.one}}</p>
+
+  <!--Ugly link back to home page-->
+  <p><a href="/">Back &raquo;</a></p>
+
+  <script>
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -41,12 +65,7 @@ window.onclick = function(event) {
     }
   }
 }
-</script>
-	
-  <!--Ugly link back to home page-->
-  <p><a href="/">Back &raquo;</a></p>
-
-
+  </script>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,5 +78,6 @@ window.onclick = function(event) {
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/introHCI.js"></script>
   </body>
 </html>
