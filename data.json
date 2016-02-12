@@ -23,14 +23,20 @@
 	],
 
 	"categories": [
-		{"category": "sports"},
-		{"category": "community-service"},
-		{"category": "grades"},
-		{"category": "leadership"}
+		{"category": "sports", 
+		 "score": "0"},
+		{"category": "community-service",
+		 "score": "1"},
+		{"category": "grades",
+		 "score": "1"},
+		{"category": "leadership",
+		 "score": "1"}
 	],	
 
 	"suggestions": [
-		{ "tag": "sport-try",
+		{
+	         "id":"one",
+		 "tag": "sport-try",
 		 "weakness": "sports",
 		 "idea": "try out some sports!"},
 
