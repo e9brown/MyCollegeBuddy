@@ -75,39 +75,35 @@ window.onclick = function(event) {
       </ul>
     </div>-->
 
-    <div class="add-page-item">
-      <select name="category">
-	  {{#each data.categories}}
-          <option>{{category}}</option>
-	   {{/each}}     
-      </select>
-    </div>
     <!-- Non functional code for fancy date drop down-->
     <!--<p>Date: <input type="text" id="datepicker"></p>-->
 
-    <div class="add-page-item">
-      <textarea name="message" rows="1" cols="30">Enter Activity Title</textarea>
+    <form id="addEntryForm" role="form" method="get" action="/add">
+    <div class="form-group">
+	    <label for="title">Enter Activity Title</label>
+	    <input type="text" class="form-control" id="title" placeholder="Title" name="title">
     </div>
-
-    <div class="add-page-item">
-      <textarea name="message" rows="1" cols="30">Enter Date</textarea>
+    <div class="form-group">
+	<label for="category">Select Category</label>
+	<input type="text" class="form-control" id="category" placeholder="Please enter one of the categories listed below" name="category">
+	{{#each data.categories}}
+	<p>{{category}}</p>
+	{{/each}}
+    	</input>	
     </div>
-
-    <div class="add-page-item">
-      <textarea name="message" rows="10" cols="30">Add description of activity.</textarea>
+    <div class="form-group">
+	    <label for="date">Enter Date Accomplished</label>
+	    <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date">
     </div>
-
     <div class="add-page-item">
-      <!--Maybe link to lookup page as confirmation?  Or have pop-up,
-          needs confirmation.  And also functionality, just links back
-          to home page.-->
-      <p><a href="/">Submit</a></p>
+	    <label for="description">Enter Activity Description</label>
+	    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
     </div>
+    <input href="/" type="submit" id =submitBtn" class="btn btn-default" value="Submit entry"</input>
+    </form>
 
   <!--Ugly link back to home page-->
   <p><a href="/">Back &raquo;</a></p>
-
-
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
