@@ -40,7 +40,6 @@
 
 <body>
 <div id="fb-root"></div>
-<script src="../data.json"></script>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -53,7 +52,6 @@
 		var uid = response.authResponse.userID;
 		console.log("FB UID: " + uid);
 		var newuid = {'uid' : uid}
-		data["fbuid"].push(newuid);
 		var accessToken = response.authResponse.accessToken;
 	  }
 	 });
