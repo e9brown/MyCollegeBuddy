@@ -16,8 +16,18 @@ exports.viewAdd = function(req, res) {
     console.log(validateForm(newEntry));
     if( validateForm(newEntry) ){
    		data["entries"].push(newEntry);
+		console.log(req.query.dest);
+		if(req.query.dest == "Submit") {
+			res.render("index", {'data':data});
+		}
+		else {
+			res.render("add", {'data':data});
+		}
    	}
+	else {
    	res.render("add", {'data':data});
+	}
+
 };
 
 function validateForm(entry) {
