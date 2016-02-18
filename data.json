@@ -23,13 +23,13 @@
 	],
 
 	"categories": [
-		{"category": "sports", 
+		{"category": "Sports", 
 		 "score": "0"},
-		{"category": "community-service",
+		{"category": "Community-Service",
 		 "score": "1"},
-		{"category": "grades",
+		{"category": "Grades",
 		 "score": "1"},
-		{"category": "leadership",
+		{"category": "Leadership",
 		 "score": "1"}
 	],	
 
