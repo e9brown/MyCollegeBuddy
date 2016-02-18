@@ -12,9 +12,13 @@ exports.viewAdd = function(req, res) {
 	   	'category' :req.query.category,
 		'description' :req.query.description
 	   }	
+   
     //console.log(newEntry);
     console.log(validateForm(newEntry));
     if( validateForm(newEntry) ){
+		
+		updateScore(req.query.category)
+
    		data["entries"].push(newEntry);
 		console.log(req.query.dest);
 		if(req.query.dest == "Submit") {
@@ -29,6 +33,18 @@ exports.viewAdd = function(req, res) {
 	}
 
 };
+
+function updateScore(categorytoupdate) {
+	var totalcategories = data["categories"].length;
+	for (var i = 0; i < totalcategories; i++) {
+		if (data["categories"][i].category == categorytoupdate) {
+			console.log("", data["categories"][i].score)
+			data["categories"][i].score++;
+			console.log("", data["categories"][i].score)
+
+		}
+	}
+}
 
 function validateForm(entry) {
     if (entry.title == "" || entry.title == null
