@@ -123,7 +123,7 @@ window.onclick = function(event) {
     
     <div class="form-group add-page-item">
 	    <label for="category">Select Category</label>
-      <p>Category is required to save an entry</p>
+      <p>Category is required to save an entry.  Select from the drop down, or type a new one.</p>
 	    <!--<input type="text" class="form-control" id="category" placeholder="Please enter one of the categories listed below" name="category">-->
       <!--Working Category drop-down-->
       <!--<select id="category" class="form-control" name="category">
@@ -134,9 +134,9 @@ window.onclick = function(event) {
       </select>-->
     
     
-    <input list="category" name="category" placeholder="Please select a category"/>
-      <datalist id="category"  name="category">
-        <option value="" disabled selected>Please select a category</option>
+    <input type="text" list="category" class="form-control" name="category" placeholder="Category Dropdown -->"/>
+      <datalist id="category" name="category">
+        <!--<option value="" disabled selected>Select a category.</option>-->
         {{#each data.categories}}
         <option value="{{category}}">{{category}}</option>
         {{/each}}
