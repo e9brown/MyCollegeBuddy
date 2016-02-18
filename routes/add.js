@@ -41,9 +41,12 @@ function updateScore(categorytoupdate) {
 			console.log("", data["categories"][i].score)
 			data["categories"][i].score++;
 			console.log("", data["categories"][i].score)
+			return;
 
 		}
 	}
+	var newcategory = { 'category':categorytoupdate, 'score':"1" };
+		data["categories"].push(newcategory);
 }
 
 function validateForm(entry) {
