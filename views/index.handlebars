@@ -40,6 +40,7 @@
 
 <body>
 <div id="fb-root"></div>
+<script src="../data.json"></script>
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -47,9 +48,16 @@
       xfbml      : true,
       version    : 'v2.5'
     });
-	var data = require('../data.json');
-
-	};
+		FB.getLoginStatus(function(response) {
+	  if (response.status === 'connected') {
+		var uid = response.authResponse.userID;
+		console.log("FB UID: " + uid);
+		var newuid = {'uid' : uid}
+		data["fbuid"].push(newuid);
+		var accessToken = response.authResponse.accessToken;
+	  }
+	 });
+  };
 
   (function(d, s, id){
      var js, fjs = d.getElementsByTagName(s)[0];
