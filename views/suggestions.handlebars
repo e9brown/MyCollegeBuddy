@@ -57,19 +57,11 @@
     	<p>{{category}} has a score of {{score}}</p>
     {{/each}}
 
-<script>
-function identifyWeakness() {
-	var data = $(this).data;
-	var headers = Object.keys(data);
-	console.log(data);
-}	
-</script>
 
 <h1> Suggestions: </h1> 
-{{#each data.suggestions}}
+{{#each data.mysugg}}
 <h4>{{idea}}</h4>
 {{/each}}
-<p>{{data.suggestions.one}}</p>
 
   <!--Ugly link back to home page-->
   <p><a href="/">Back &raquo;</a></p>

@@ -35,29 +35,61 @@
 
 	"suggestions": [
 		{
-	         "id":"one",
-		 "tag": "sport-try",
-		 "weakness": "sports",
+	         "id":"sports1",
+		 "weakness": "Sports",
 		 "idea": "try out some sports!"},
 
-	        { "tag": "sport-tryharder",
-		 "weakness": "sports",
-		 "idea": "try out MORE sports!"},
+		{
+	         "id":"sports2",
+		 "weakness": "Sports",
+		 "idea": "try out some more sports!"},
 
-		{"weakness": "community-service",
+		{
+		 "id":"community-service1",
+		 "weakness": "Community-Service",
 		 "idea": "colleges love community service!"},
 
-		{"weakness": "grades",
-		 "idea": "mycollegebuddy is a great way to store transcripts"},
+		{"id":"community-service2",
+		 "weakness": "Community-Service",
+		 "idea": "colleges really love community service!"},
 
-		{"weakness": "leadership",
-		 "idea": "leadership roles dramatically increase university interest"}
+		{"id":"leadership1",
+		 "weakness": "Leadership",
+		 "idea": "Collegebuddy helped train Superman. Stick with us an you'll go places!"},
+
+		{"id":"leadership2",
+		 "weakness": "Leadership",
+		 "idea": "leadership roles dramatically increase university interest"},
+	
+		{"id":"custom1",
+		 "weakness": "custom",
+		 "idea": "Generic advice for user-created categories"},
+
+		{"id":"custom2",
+		 "weakness": "custom",
+		 "idea": "Generic advice for user-created categories2"},
+
+		{"id":"generic1",
+		 "weakness": "generic",
+		 "idea": "Generic advice"},
+
+		{"id":"generic2",
+		 "weakness": "generic",
+		 "idea": "Generic advice round 2"},
+		{"id":"rounded",
+		 "weakness": "generic",
+		 "idea": "Your history is very well rounded, keep up the good work!"}
+
 	],
 
 	"user": [
 		{
 			"facebook_id" : "erik_m_brown"
 		}
+	],
+
+"mysugg": [
+
 	],
 
 "buttons": [
