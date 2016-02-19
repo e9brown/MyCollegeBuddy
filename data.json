@@ -1,24 +1,28 @@
 {
+	"entries-sorted" : [{
+
+	}],
+
 	"entries": [
 		{
 			"title": "Fall 2011 report card",
 			"date": "today ",
 			"edit": "today ",
-			"category": "grades",
+			"category": "Grades",
 			"description": "took some tests, got some grades"
 		},
 		{
 			"title": "Fed homeless at soup kitchen with Bernie",
 			"date": "tomorrow ",
 			"edit": "tomorrow ",
-			"category": "community-service",
+			"category": "Community-Service",
 			"description": "Trump was there too!"
 		},
 		{
 			"title": "Led a rally for Bernie",
 			"date": "tomorrow ",
 			"edit": "tomorrow ",
-			"category": "leadership"
+			"category": "Leadership"
 		}
 	],
 
