@@ -51,20 +51,20 @@
 	</div>
 	<!-- End help button & menu stuff -->
 
+
 <div class="page-item">
   {{#each data.categories}}
   	<p>{{category}} has a score of {{score}}</p>
   {{/each}}
 </div>
 
-
-<div class="page-item">
+<div clas="page-item">
   <h1> Suggestions: </h1> 
-  {{#each data.suggestions}}
-    <h4>{{idea}}</h4>
+  {{#each data.mysugg}}
+  <h4>{{idea}}</h4>
   {{/each}}
-  <p>{{data.suggestions.one}}</p>
 </div>
+
   <!--Ugly link back to home page-->
   <!--<p><a href="/">Back &raquo;</a></p>-->
 
