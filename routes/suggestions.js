@@ -11,7 +11,6 @@ exports.viewSuggestions = function(req, res){
 
 function generateSuggestions(weakareas) {
 	var numweak = weakareas.length;
-	console.log("HI MOM");
 	console.log(numweak);
 	for (var key in data["mysugg"]) {
 		delete data["mysugg"][key];
@@ -19,7 +18,6 @@ function generateSuggestions(weakareas) {
 	var temp = '{ "suggestions" : [] }';
 	var results = JSON.parse(temp);
 	if (numweak == 2) {
-		console.log("two weaknesses");
 		var customdone = false;
 	
 		for (var i = 0; i < data["suggestions"].length; i++) {
@@ -61,7 +59,6 @@ function generateSuggestions(weakareas) {
 		}
 	}
 	else if (numweak == 1) {
-		console.log("one weakness");
 		for (var i = 0; i < data["suggestions"].length; i++) {
 		
 			if (weakareas[0].toString() == 'Sports') {
@@ -101,7 +98,7 @@ function generateSuggestions(weakareas) {
 					data["mysugg"].push(data["suggestions"][i]);
 				} 
 			if (data["suggestions"][i].id == "generic2") {
-					data["mysugg"].push(data["suggestions"][i]);
+					//data["mysugg"].push(data["suggestions"][i]);
 				} 
 		
 		}

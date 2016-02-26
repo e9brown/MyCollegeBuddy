@@ -5,22 +5,22 @@
 
 	"entries": [
 		{
-			"title": "Fall 2011 report card",
-			"date": "today ",
-			"edit": "today ",
+			"title": "Fall 2015 report card",
+			"date": "10/01/2015",
+			"edit": "12/13/2015",
 			"category": "Grades",
-			"description": "took some tests, got some grades"
+			"description": "Precalculus: A, Home Economics: C, PE: A+"
 		},
 		{
 			"title": "Fed homeless at soup kitchen with Bernie",
-			"date": "tomorrow ",
+			"date": "12/31/2015",
 			"edit": "tomorrow ",
 			"category": "Community-Service",
 			"description": "Trump was there too!"
 		},
 		{
 			"title": "Led a rally for Bernie",
-			"date": "tomorrow ",
+			"date": "01/30/2015",
 			"edit": "tomorrow ",
 			"category": "Leadership"
 		}
@@ -41,29 +41,29 @@
 		{
 	         "id":"sports1",
 		 "weakness": "Sports",
-		 "idea": "try out some sports!"},
+		 "idea": "Many colleges consider sports to demonstrate the ability to work with a team, consider joining a team."},
 
 		{
 	         "id":"sports2",
 		 "weakness": "Sports",
-		 "idea": "try out some more sports!"},
+		 "idea": "Coaching sports at camp is a great way to connect with younger kids, and helps build valuable leadership skills!"},
 
 		{
 		 "id":"community-service1",
 		 "weakness": "Community-Service",
-		 "idea": "colleges love community service!"},
+		 "idea": "Some colleges require community service, but all colleges count look favorably on it during the admissions process."},
 
 		{"id":"community-service2",
 		 "weakness": "Community-Service",
-		 "idea": "colleges really love community service!"},
+		 "idea": "Community service is excellent for your well-being! Consider volunteering for local community organizations."},
 
 		{"id":"leadership1",
 		 "weakness": "Leadership",
-		 "idea": "Collegebuddy helped train Superman. Stick with us an you'll go places!"},
+		 "idea": "Everyone is special. Check out clubs at your school and see if any interest you. If you find one, joining the club's leadership team looks great on your applications!"},
 
 		{"id":"leadership2",
 		 "weakness": "Leadership",
-		 "idea": "leadership roles dramatically increase university interest"},
+		 "idea": "Colleges look for students that thrive both in and out of the classroom. Holding leadership roles is an ideal way to demonstrate that."},
 	
 		{"id":"custom1",
 		 "weakness": "custom",
@@ -75,7 +75,7 @@
 
 		{"id":"generic1",
 		 "weakness": "generic",
-		 "idea": "Generic advice"},
+		 "idea": "It's never too early to start planning for college!"},
 
 		{"id":"generic2",
 		 "weakness": "generic",
