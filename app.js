@@ -46,6 +46,7 @@ app.get('/login', login.viewLogin);
 app.get('/history', history.viewHistory)
 app.get('/suggestions', suggestions.viewSuggestions)
 app.get('/help', help.viewHelp);
+app.get('/viewB', index.viewB);
 // Example route
 // app.get('/users', user.list);
 
