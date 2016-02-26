@@ -95,24 +95,13 @@ window.onclick = function(event) {
   }
 }
 </script>
-	
-    <!--Code for drop down that doesn't channge on select, maybe use
-        full elsewhere-->
-    <!--<div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Category
-        <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Sports</a></li>
-        <li><a href="#">Volunteering</a></li>
-        <li><a href="#">Grades</a></li>
-      </ul>
-    </div>-->
+
 
     <!-- Non functional code for fancy date drop down-->
     <!--<p>Date: <input type="text" id="datepicker"></p>-->
 
   <form id="addEntryForm" role="form" method="get" action="/add">
-    <div class="form-group add-page-item">
+    <div class="form-group page-item">
 	    <label for="title">Enter Activity Title</label>
       <p>Title is required to save an entry</p>
 	    <input type="text" class="form-control" id="title" placeholder="Title" name="title">
@@ -121,7 +110,7 @@ window.onclick = function(event) {
     <!--Empty div for empty field message.-->
     <div class="alert" id="t_alert"></div>
     
-    <div class="form-group add-page-item">
+    <div class="form-group page-item">
 	    <label for="category">Select Category</label>
       <p>Category is required to save an entry.  Select from the drop down, or type a new one.</p>
 	    <!--<input type="text" class="form-control" id="category" placeholder="Please enter one of the categories listed below" name="category">-->
@@ -145,15 +134,15 @@ window.onclick = function(event) {
     <!--Empty div for empty field message.-->
     <div class="alert" id="c_alert"></div>
     
-    <div class="form-group add-page-item">
+    <div class="form-group page-item">
 	    <label for="date">Enter Date Accomplished</label>
 	    <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date">
     </div>
-    <div class="form-group add-page-item">
+    <div class="form-group page-item">
 	    <label for="description">Enter Activity Description</label>
 	    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
     </div>
-    <div class="add-page-item">
+    <div class="page-item">
 	  <input href="/" type="submit" id ="submitBtn" class="btn btn-default" value="Submit & Add Another" name="dest"</input>
       <input href="/" type="submit" id ="submitBtn" class="btn btn-default" value="Submit" name="dest"</input>
     </div>

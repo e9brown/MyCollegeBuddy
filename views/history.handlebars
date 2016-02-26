@@ -50,12 +50,13 @@
 	</div>
 	<!-- End help button & menu stuff -->	
 
-<div class="entries">
+<div class="entries page-item">
     {{#each data.entries-sorted}}
       <div class="entry" id="{{id}}">
-	      <h4>{{category}} : {{title}} : {{date}}</h4>
-	      <p>{{description}}</p>
-	  <h1>_______________________________</h1>
+        <p>{{date}}</p>
+	      <h4><strong>{{category}} : {{title}}</strong></h4>
+	      <p><i>{{description}}</i></p>
+	       <hr>
       </div>
     {{/each}}	
 </div>
@@ -92,7 +93,7 @@ window.onclick = function(event) {
 	
 
   <!--Ugly link back to home page-->
-  <p><a href="/">Back &raquo;</a></p>
+  <!--<p><a href="/">Back &raquo;</a></p>-->
 
 
 
