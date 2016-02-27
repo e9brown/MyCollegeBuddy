@@ -5,6 +5,8 @@ var data = require('../data.json');
 
 exports.viewAdd = function(req, res) {
    //console.log(req.query);
+   //console.log(req);
+   //console.log(res);
     var newEntry = {
 		'title' :req.query.title,
 	   	'date' :req.query.date,
@@ -53,9 +55,7 @@ function updateScore(categorytoupdate) {
 function validateForm(entry) {
     if (entry.title == "" || entry.title == null
     	|| entry.category == "" || entry.category == null){
-    	console.log("Title and Category are required fields.")
-    	//$(".alert").html('<p>The field above is required to submit. </p>');
-    	//validateMessage();
+    	//Code goes here to make title and category messages appear.
     	return false;
     }
     else return true;
