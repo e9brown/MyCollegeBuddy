@@ -14,13 +14,13 @@ exports.viewAdd = function(req, res) {
 	   }	
    
     //console.log(newEntry);
-    console.log(validateForm(newEntry));
+    //console.log(validateForm(newEntry));
     if( validateForm(newEntry) ){
 		
 		updateScore(req.query.category)
 
    		data["entries"].push(newEntry);
-		console.log(req.query.dest);
+		//.log(req.query.dest);
 		if(req.query.dest == "Submit") {
 			res.render("index", {'data':data});
 		}

@@ -10,8 +10,8 @@ exports.viewHistory = function(req, res){
 
    	//console.log(data.categories[cat]);
    		for (var ent in data.entries){
-   			console.log(data.categories[ent]);
-   			console.log("NewEntry")
+   			//console.log(data.categories[ent]);
+   			//console.log("NewEntry")
    			if (data.categories[cat].category == data.entries[ent].category){
    				//console.log("HEREERERE")
    				data["entries-sorted"].push(data.entries[ent]);

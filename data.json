@@ -1,7 +1,8 @@
 {
 	"entries-sorted" : [{
-
 	}],
+
+	"bool": [{ "viewB":"false" }],
 
 	"entries": [
 		{
@@ -129,12 +130,17 @@
 	"link": "/history"
       },
       { "name": "Suggestions",
-        "id": "option2",
+        "id": "option3",
 	"link":"/suggestions"
       },
       { "name": "Login/Logout",
-        "id": "option2",
+        "id": "option4",
 	"link": "/login"
-      }	
+      },	
+      {
+      	"name": "Help",
+      	"id": "dialog_link",
+    "link": "/"
+      }
 	]
 }

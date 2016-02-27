@@ -22,28 +22,22 @@
     </script>
 	<!-- END HELP BUTTON HEADER CODE BLOCK -->
 
-  <!-- Non functional code for fancy date drop down-->
-  <!--<meta charset="utf-8">
-  <title>jQuery UI Datepicker - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-  <script src="jQuery.ui.datepicker.js"></script>
-  <script src="jquery.ui.datepicker.mobile.js"></script>
-
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.11/jquery-ui.min.js"></script>
-
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>-->
+  <!-- DATE PICKER -->
+  <meta charset="utf-8">
+    <title>jQuery UI Datepicker - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script>
+      $(function() {
+        $( "#datepicker" ).datepicker();
+      });
+    </script>
+  <!-- END DATE PICKER -->  
 
   </head>
+
 
   <body>
     <div class="jumbotron">
@@ -136,7 +130,8 @@ window.onclick = function(event) {
     
     <div class="form-group page-item">
 	    <label for="date">Enter Date Accomplished</label>
-	    <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date">
+	    <!--<input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date1">-->
+      <input class="form-control" type="text" id="datepicker" name="date">
     </div>
     <div class="form-group page-item">
 	    <label for="description">Enter Activity Description</label>
