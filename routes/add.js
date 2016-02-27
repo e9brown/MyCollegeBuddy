@@ -10,7 +10,8 @@ exports.viewAdd = function(req, res) {
 	   	'date' :req.query.date,
 	   	'edit' :req.query.date,
 	   	'category' :req.query.category,
-		'description' :req.query.description
+		'description' :req.query.description,
+		'newest' :"true"
 	   }	
    
     //console.log(newEntry);
