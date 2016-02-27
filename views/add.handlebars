@@ -101,38 +101,26 @@ window.onclick = function(event) {
 	    <input type="text" class="form-control" id="title" placeholder="Title" name="title">
     </div>
 
-    <!--Empty div for empty field message.-->
-    <div class="alert" id="t_alert"></div>
+
     
     <div class="form-group page-item">
 	    <label for="category">Select Category</label>
       <p id="category-error" style="display: none">Category is required to save an entry.  Select from the drop down, or type a new one.</p>
-	    <!--<input type="text" class="form-control" id="category" placeholder="Please enter one of the categories listed below" name="category">-->
-      <!--Working Category drop-down-->
-      <!--<select id="category" class="form-control" name="category">
-        <option value="" disabled selected>Please select a category</option>
-        {{#each data.categories}}
-          <option value="{{category}}">{{category}}</option>
-        {{/each}}
-      </select>-->
-    
-    
-    <input type="text" list="category" class="form-control" name="category" placeholder="Type New, or Select Pre-exisiting"/>
+      <input type="text" list="category" class="form-control" name="category" placeholder="Type New, or Select Pre-exisiting"/>
       <datalist id="category" name="category">
-        <!--<option value="" disabled selected>Select a category.</option>-->
-        {{#each data.categories}}
+      {{#each data.categories}}
         <option value="{{category}}">{{category}}</option>
-        {{/each}}
+      {{/each}}
     </datalist>
     </div>
-    <!--Empty div for empty field message.-->
-    <div class="alert" id="c_alert"></div>
+
     
     <div class="form-group page-item">
 	    <label for="date">Enter Date Accomplished</label>
 	    <!--<input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date1">-->
-      <input class="form-control" type="text" id="datepicker" name="date">
+      <input class="form-control" type="text" id="datepicker" name="date" placeholder="mm/dd/yyyy">
     </div>
+    <hr>
     <div class="form-group page-item">
 	    <label for="description">Enter Activity Description</label>
 	    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
