@@ -1,7 +1,7 @@
 'use strict';
 
 
-var data = require('../data.json');
+var data = require('../public/data.json');
 
 exports.viewAdd = function(req, res) {
    //console.log(req.query);
