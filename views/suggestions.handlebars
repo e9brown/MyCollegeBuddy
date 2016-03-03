@@ -55,20 +55,17 @@
 <div class="page-item">
   <h1> Scores: </h1>
   <h4>These numbers indicate how many entries you have in each category.</h4>
-  <hr>
   {{#each data.categories}}
-  	<p>{{category}}: {{score}}</p>
-    <hr>
+  	<p>-{{category}}: {{score}}</p>
   {{/each}}
 </div>
 
 
 <div class="page-item">
   <h1> Suggestions: </h1>
-  <h4>Suggestions are made based on your scores, and may help give you ideas for future entries!</h4> <hr>
+  <h4>Suggestions are made based on your scores, and may help give you ideas for future entries!</h4> 
   {{#each data.mysugg}}
-  <h5>{{idea}}</h5>
-  <hr>
+  	<p>-{{idea}}</p>
   {{/each}}
 </div>
   <!--Ugly link back to home page-->
