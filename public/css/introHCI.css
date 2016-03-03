@@ -37,16 +37,16 @@
 }
 
 .footer{ 
-       	position: fixed;     
+       	position: relative;     
        	text-align: left;    
        	bottom: 0px; 
        	width: 100%;
 }
 
 .rightfoot{
-	position: fixed;     
+	position: relative;     
        	text-align: left;    
-       	bottom: 20px;
+       	bottom: 50px;
        	width: 100%;
 }
 

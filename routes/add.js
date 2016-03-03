@@ -21,17 +21,20 @@ exports.viewAdd = function(req, res) {
     if( validateForm(newEntry) ){
 		
 		updateScore(req.query.category)
-
+		console.log("Pushing to json")
    		data["entries"].push(newEntry);
 		//.log(req.query.dest);
 		if(req.query.dest == "Submit") {
+			console.log("loading home")
 			res.render("index", {'data':data});
 		}
 		else {
+			console.log("loading add again")
 			res.render("add", {'data':data});
 		}
    	}
 	else {
+    console.log("loading add/failed add")
    	res.render("add", {'data':data});
 	}
 
@@ -41,9 +44,9 @@ function updateScore(categorytoupdate) {
 	var totalcategories = data["categories"].length;
 	for (var i = 0; i < totalcategories; i++) {
 		if (data["categories"][i].category == categorytoupdate) {
-			console.log("", data["categories"][i].score)
+			//console.log("", data["categories"][i].score)
 			data["categories"][i].score++;
-			console.log("", data["categories"][i].score)
+			//console.log("", data["categories"][i].score)
 			return;
 
 		}
