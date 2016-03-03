@@ -54,7 +54,7 @@
     <![endif]-->        
 </head>
 
-<body>
+<body class="bg">
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function() {
@@ -84,9 +84,9 @@
 
 	<div class="container">
 		<!-- p means paragraph -->
-		<div class="jumbotron">
-			<h1>MyCollegeBuddy</h1>
-			<p><i>Building Your College Plan One Step at a Time</i></p>
+		<div>
+			<!--<h1>MyCollegeBuddy</h1>
+			<p><i>Building Your College Plan One Step at a Time</i></p>-->
 			
 				<!-- Help button -->
     		<div>
@@ -104,22 +104,40 @@
 	<!-- End help button -->
 		</div>
 
-
+<!-- TITLE ANIMATION-->
+ <div style="text-align:center;">
+  <svg width="500" height="140">
+    <text x="60" y="80" fill="none" stroke="black" stroke-width="3" font-size="50"  stroke-dasharray="1000"
+    stroke-dashoffset="1000">MyCollegeBuddy
+    <animate attributeName="stroke-dashoffset"
+      from="1000"
+      to="0" 
+      dur="8s"
+      fill="freeze">
+          
+    </animate> </text>
+    <text x="45" y="120" fill="none" stroke="blue" stroke-width="2" font-size="20"  stroke-dasharray="1000" font-style="italic"
+    stroke-dashoffset="1000">Building Your College Plan One Step at a Time
+    <animate attributeName="stroke-dashoffset"
+      from="1000"
+      to="0" 
+      dur="20s"
+      fill="freeze">
+  </svg>
+ </div>
+<!-- END TITLE ANIMATION-->
 
 		
 		<div>
 		{{#each data.h-buttons}}
-		<div class="buttons" id="{{id}}"> 
-			<a href="{{link}}" class="thumbnail"><p>{{name}}</p></a>
+		<div class="hot-container" id="{{id}}"> 
+			<a href="{{link}}" class="btn btn-blue btn-block"><p>{{name}}</p></a>
     		</div>
 		{{/each}}
 		</div>	
 	
-	<script>
 
-	</script>
-	
-	<div >Team Computer Science Operatives</div>
+	<div class="footer">Team Computer Science Operatives</div>
 	
 	<div>
 		<div class="fb-like" data-href="http://mycollegebuddy.herokuapp.com/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
