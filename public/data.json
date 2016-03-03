@@ -74,11 +74,11 @@
 	
 		{"id":"custom1",
 		 "weakness": "custom",
-		 "idea": "Generic advice for user-created categories"},
+		 "idea": "It looks like a custom category could use more entries."},
 
 		{"id":"custom2",
 		 "weakness": "custom",
-		 "idea": "Generic advice for user-created categories2"},
+		 "idea": "A key to a great college applicant is being well-rounded!"},
 
 		{"id":"generic1",
 		 "weakness": "generic",
@@ -86,7 +86,7 @@
 
 		{"id":"generic2",
 		 "weakness": "generic",
-		 "idea": "Generic advice round 2"},
+		 "idea": "Keep adding to your categories! You can even add your own categories to build on!"},
 		{"id":"rounded",
 		 "weakness": "generic",
 		 "idea": "Your history is very well rounded, keep up the good work!"}
