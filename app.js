@@ -14,6 +14,8 @@ var help = require('./routes/help');
 var login = require('./routes/login');
 var history = require('./routes/history');
 var suggestions = require('./routes/suggestions');
+var editentry = require('./routes/editentry');
+var removeentry = require('./routes/removeentry');
 // Example route
 // var user = require('./routes/user');
 
@@ -46,6 +48,8 @@ app.get('/login', login.viewLogin);
 app.get('/history', history.viewHistory)
 app.get('/suggestions', suggestions.viewSuggestions)
 app.get('/help', help.viewHelp);
+app.get('/editentry', editentry.edit);
+app.get('/removeentry', removeentry.remove);
 //app.get('/viewB', index.viewB);
 // Example route
 // app.get('/users', user.list);

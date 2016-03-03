@@ -1,7 +1,11 @@
-var data = require("../data.json");
+var data = require("../public/data.json");
 /*
  * GET home page.
  */
+exports.editHistory = function(req, res){
+	res.json(data);
+	}
+
 exports.viewHistory = function(req, res){
    //console.log(data.entries);	
    data["entries-sorted"] = [];
