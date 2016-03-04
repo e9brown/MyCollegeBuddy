@@ -12,8 +12,8 @@ exports.viewSuggestions = function(req, res){
 function generateSuggestions(weakareas) {
 	var numweak = weakareas.length;
 	console.log(numweak);
-	for (var key in data["mysugg"]) {
-		delete data["mysugg"][key];
+	for (var i=0; i < data["mysugg"].length; i++) {
+		data["mysugg"].splice(i,1);
 	}
 	var temp = '{ "suggestions" : [] }';
 	var results = JSON.parse(temp);
