@@ -4,9 +4,7 @@
 var data = require('../public/data.json');
 
 exports.viewAdd = function(req, res) {
-   //console.log(req.query);
-   //console.log(req);
-   //console.log(res);
+
     var newEntry = {
 		'title' :req.query.title,
 	   	'date' :req.query.date,
@@ -16,25 +14,19 @@ exports.viewAdd = function(req, res) {
 		'newest' :"true"
 	   }	
    
-    //console.log(newEntry);
-    //console.log(validateForm(newEntry));
+
     if( validateForm(newEntry) ){
 		
 		updateScore(req.query.category)
-		console.log("Pushing to json")
    		data["entries"].push(newEntry);
-		//.log(req.query.dest);
 		if(req.query.dest == "Submit") {
-			console.log("loading home")
 			res.render("index", {'data':data});
 		}
 		else {
-			console.log("loading add again")
 			res.render("add", {'data':data});
 		}
    	}
 	else {
-    console.log("loading add/failed add")
    	res.render("add", {'data':data});
 	}
 
@@ -63,14 +55,3 @@ function validateForm(entry) {
     }
     else return true;
 };
-
-/* $(document).read(function(){
-	intializePage();
-})
-function initialzePage(){
-	$('.submit').click(validateMessage);
-} */
-
-/*function validateMessage(){
-	$(".alert").html('<p>The field above is required to submit. </p>');
-}*/

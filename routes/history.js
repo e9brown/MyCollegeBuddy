@@ -20,7 +20,7 @@ exports.viewHistory = function(req, res){
                data.entries[ent].mystyle = "";
                if (data.entries[ent].newest == "true"){
                   data.entries[ent].newest = "false";
-                  data.entries[ent].mystyle = "color:red";
+                  data.entries[ent].mystyle = "color:#D73232";
                }
    				data["entries-sorted"].push(data.entries[ent]);
    			}
