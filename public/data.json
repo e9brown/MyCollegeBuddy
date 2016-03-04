@@ -120,7 +120,7 @@
         "id": "option2",
 	"link":"/suggestions"
       },
-      { "name": "Login/Logout",
+      { "name": "Login",
         "id": "option2",
 	"link": "/login"
       }	
@@ -139,7 +139,7 @@
         "id": "option3",
 	"link":"/suggestions"
       },
-      { "name": "Login/Logout",
+      { "name": "Login",
         "id": "option4",
 	"link": "/login"
       },	
