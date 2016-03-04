@@ -5,6 +5,9 @@ var data = require('../public/data.json');
 
 exports.viewAdd = function(req, res) {
 
+    
+
+
     var newEntry = {
 		'title' :req.query.title,
 	   	'date' :req.query.date,
@@ -14,10 +17,15 @@ exports.viewAdd = function(req, res) {
 		'newest' :"true"
 	   }	
    
+    
 
     if( validateForm(newEntry) ){
-		
-		updateScore(req.query.category)
+		for (var i = 0; i < data["categories"].length; i++) {
+			if (data["categories"][i].category.toLowerCase() == req.query.category.toLowerCase()) {
+				newEntry["category"]=data["categories"][i].category;
+			}
+		}
+		updateScore(newEntry["category"])
    		data["entries"].push(newEntry);
 		if(req.query.dest == "Submit") {
 			res.render("index", {'data':data});
