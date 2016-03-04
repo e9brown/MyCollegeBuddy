@@ -26,7 +26,7 @@
   <!-- END GOOGLE PIE CHART HEADER -->
   </head>
 
-  <body>
+  <body class="bg">
     <div class="jumbotron">
       <h1>SUGGESTIONS</h1>
     </div>
@@ -46,34 +46,41 @@
         </div>
       </div>
     
-      <div style="text-align:right; position: absolute; right:20px; top:0px;">
-        <div id="dialog" title="Suggestions Help" style="display:none">
+      <div style=" float:right;">
+        <div id="dialog" title="Previous Entries Help" style="display:none">
           <p>These suggestions are designed to guide you towards areas in which you may be lacking in.</p>
         </div>
-        <style> .button2 {background-color: #4CAF50; border: none; color: white; padding: 15px 15px; text-align: center; text-decoration: none; display: inline-block;
-          font-size: 16px; margin: 4px 2px; cursor: pointer;}
-        </style>
-        <button class="button2" id="dialog_link">Help</button>
+
+        <div class="help-btn">
+          <button class="dropbtn" id="dialog_link">Help</button>
+        </div>
       </div>
 	</div>
 	<!-- End help button & menu stuff -->
 
-
 <div class="page-item">
-  <h1> Scores: </h1>
-  <h4>These numbers indicate how many entries you have in each category.</h4>
+  <h1> Scores </h1>
+  <h4><i>These numbers indicate how many entries you have in each category.</i></h4>
+  <table style="width:50%">
+    <tr>
+      <th>Category</th>
+      <th>Score</th>
   {{#each data.categories}}
-  	<p>-{{category}}: {{score}}</p>
+  <tr>
+  	<td>{{category}}</td> <td>{{score}}</td>
+  </tr>
   {{/each}}
+</table>
 </div>
 
-
 <div class="page-item">
-  <h1> Suggestions: </h1>
-  <h4>Suggestions are made based on your scores, and may help give you ideas for future entries!</h4> 
+  <h1> Suggestions </h1>
+  <h4><i>Suggestions are made based on your scores, and may help give you ideas for future entries!</i></h4> 
+  <ul>
   {{#each data.mysugg}}
-  	<p>-{{idea}}</p>
+  	<li>{{idea}}</li>
   {{/each}}
+</ul>
 </div>
   <!--Ugly link back to home page-->
   <!--<p><a href="/">Back &raquo;</a></p>-->
