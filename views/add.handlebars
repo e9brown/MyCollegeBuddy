@@ -39,7 +39,7 @@
   </head>
 
 
-  <body>
+  <body class="bg">
     <div class="jumbotron">
       <h1>ADD</h1>
     </div>
@@ -54,15 +54,15 @@
           {{/each}}
         </div>
       </div>
-    
-      <div style="text-align:right; position: absolute; right:20px; top:0px;">
-        <div id="dialog" title="Add Help" style="display:none">
+
+      <div style=" float:right;">
+        <div id="dialog" title="Previous Entries Help" style="display:none">
           <p>Please describe your activity. Title and Category are mandatory fields.  To keep entires organized, select your category from the drop-down if available.</p>
         </div>
-        <style> .button2 {background-color: #4CAF50; border: none; color: white; padding: 15px 15px; text-align: center; text-decoration: none; display: inline-block;
-          font-size: 16px; margin: 4px 2px; cursor: pointer;}
-        </style>
-        <button class="button2" id="dialog_link">Help</button>
+
+        <div class="help-btn">
+          <button class="dropbtn" id="dialog_link">Help</button>
+        </div>
       </div>
 	</div>
 	<!-- End help button & menu stuff -->
@@ -98,7 +98,7 @@ window.onclick = function(event) {
     <div class="form-group page-item">
 	    <label for="title">Enter Activity Title</label>
       <p id="title-error" style="display: none">Title is required to save an entry</p>
-	    <input type="text" class="form-control" id="title" placeholder="Title" name="title">
+	    <input type="text" class="form-control add-field" id="title" placeholder="Title" name="title">
     </div>
 
     <hr>
@@ -106,7 +106,7 @@ window.onclick = function(event) {
     <div class="form-group page-item">
 	    <label for="category">Select Category</label>
       <p id="category-error" style="display: none">Category is required to save an entry.  Select from the drop down, or type a new one.</p>
-      <input type="text" list="category" class="form-control" name="category" placeholder="Type New, or Select Pre-exisiting"/>
+      <input type="text" list="category" class="form-control add-field" name="category" placeholder="Type New, or Select Pre-exisiting"/>
       <datalist id="category" name="category">
       {{#each data.categories}}
         <option value="{{category}}">{{category}}</option>
@@ -119,18 +119,18 @@ window.onclick = function(event) {
     <div class="form-group page-item">
 	    <label for="date">Enter Date Accomplished</label>
 	    <!--<input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" name="date1">-->
-      <input class="form-control" type="text" id="datepicker" name="date" placeholder="mm/dd/yyyy">
+      <input class="form-control add-field" type="text" id="datepicker" name="date" placeholder="mm/dd/yyyy">
     </div>
 
     <hr>
 
     <div class="form-group page-item">
 	    <label for="description">Enter Activity Description</label>
-	    <input type="text" class="form-control" id="description" placeholder="Description" name="description">
+	    <input type="text" class="form-control add-field" id="description" placeholder="Description" name="description">
     </div>
     <div class="page-item">
-	  <input type="submit" id ="submitBtn" class="btn btn-default" value="Submit & Add Another" name="dest"</input>
-      <input type="submit" id ="submitBtn" class="btn btn-default" value="Submit" name="dest"</input>
+	  <input type="submit" id ="submitBtn" class="dropbtn" value="Submit & Add Another" name="dest"</input>
+      <input type="submit" id ="submitBtn" class="dropbtn" value="Submit" name="dest"</input>
     </div>
   </form>
 

@@ -17,7 +17,7 @@
 
 .jumbotron:after {
      content:"";
-     /*background: url("../images/city-1.jpg");*/
+     background: url("../images/city-1.jpg");
      opacity: 0.4;
      top: 0;
      left: 0;
@@ -65,20 +65,45 @@
 
 
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+    background-color: #699DB6;
+    border-color: rgba(0,0,0,0.3);
+    padding:   16px;
+    font-size: 12px;
     border: none;
     cursor: pointer;
+    display: inline-block;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 3px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
 }
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+    background-color: #3C677B;
+    border-color: rgba(0,0,0,0.9);
 }
+.dropbtn:active {
+        background-color: #CCC;
+        border-color: rgba(0,0,0,0.9);
+    }
 .dropdown {
     position:fixed;
     text-align:right;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+}
+
+.help-btn {
+    position:fixed;
+    text-align:right;
+    padding-right: 40px;
     width: 100px;
     position: relative;
     display: inline-block;
@@ -108,6 +133,12 @@
 <body>
 
 .alert {}
+
+.add-field {
+    background-color: #A3D4F7;
+    border: 1px solid rgba(0,0,0,0.3);
+    color: #666;
+}
 
 
 
