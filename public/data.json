@@ -112,7 +112,7 @@
         "id": "option1",
 	"link": "/add"
       },
-      { "name": "Previous Entries",
+      { "name": "My Entries",
         "id": "option2",
 	"link": "/history"
       },
@@ -131,7 +131,7 @@
         "id": "option1",
 	"link": "/add"
       },
-      { "name": "Previous Entries",
+      { "name": "My Entries",
         "id": "option2",
 	"link": "/history"
       },
